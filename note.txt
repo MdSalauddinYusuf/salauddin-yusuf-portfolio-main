@@ -1,0 +1,486 @@
+html
+[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. SALAUDDIN YUSUF | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Decoration -->
+    <div class="blob-c">
+        <div class="shape-blob"></div>
+        <div class="shape-blob one"></div>
+        <div class="shape-blob two"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Md. Salauddin Yusuf<span class="text-accent">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link btn-cta ms-lg-3" href="#contact">Hire Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h5 class="text-accent fw-bold mb-3">WELCOME TO MY WORLD</h5>
+                    <h1 class="display-3 fw-800 text-white mb-3">Hi, I'm <span class="gradient-text">Salauddin</span></h1>
+                    <h2 class="h3 text-light-50 mb-4">Full Stack Web Developer & CSE Student</h2>
+                    <p class="lead text-light-50 mb-5 pe-lg-5">Building high-performance web applications with modern technologies and a focus on user experience.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#projects" class="btn btn-accent-gradient px-4 py-3">View Portfolio</a>
+                        <a href="#about" class="btn btn-outline-light px-4 py-3">More About Me</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0 text-center">
+                    <div class="hero-img-container">
+                        <img src="salauddinpassportsizephoto.jpg" alt="Salauddin Yusuf" class="img-fluid hero-profile-img shadow-lg">
+                        <div class="experience-badge">
+                            <span class="fw-bold">CSE</span>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-img-frame">
+                        <img src="salauddinpassportsizephoto.jpg" alt="About Me" class="img-fluid rounded-4 shadow">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h6 class="text-accent fw-bold">MY BIOGRAPHY</h6>
+                    <h2 class="section-title text-white">About Me</h2>
+                    <p class="text-light-50 mb-4">I am a highly motivated Computer Science student at ULAB with a passion for developing dynamic and challenging web applications. I specialize in bridging the gap between clean design and robust back-end logic.</p>
+                    
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="edu-card p-3 rounded-3 glass-card border-start border-accent border-4">
+                                <h6 class="text-accent fw-bold mb-1">BSc in CSE</h6>
+                                <p class="text-white mb-0">University of Liberal Arts Bangladesh</p>
+                                <small class="text-light-50">CGPA: 3.60</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="edu-card p-3 rounded-3 glass-card border-start border-accent border-4">
+                                <h6 class="text-accent fw-bold mb-1">HSC (Science)</h6>
+                                <p class="text-white mb-0">BIRSHRESHTHA NOOR MOHAMMAD PUBLIC COLLEGE (BNMPC) </p>
+                                <small class="text-light-50">GPA: 5.00</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Timeline) -->
+    <section id="experience" class="section-padding bg-dark-soft">
+        <div class="container">
+            <h2 class="section-title text-white text-center mx-auto mb-5">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card p-4">
+                        <h4 class="text-accent">Mollah Traders Ltd</h4>
+                        <h5>Assistant Manager</h5>
+                        <p class="text-light-50 mt-3">Responsibility includes managing daily operations, leading staff teams, and implementing digital workflow optimizations to improve business efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container text-center">
+            <h2 class="section-title text-white mx-auto">Technical Mastery</h2>
+            <div class="row g-4 mt-4" id="skills-container">
+                <!-- Dynamically Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-dark-soft">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h6 class="text-accent fw-bold">PORTFOLIO</h6>
+                    <h2 class="section-title text-white m-0">Recent Projects</h2>
+                </div>
+            </div>
+            <div id="project-container" class="row g-4">
+                <!-- Dynamically Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Declaration & Signature -->
+    <footer class="footer py-5 text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="declaration-box p-5 glass-card">
+                        <i class="fas fa-quote-left text-accent fa-2x mb-3"></i>
+                        <h4 class="mb-4">Formal Declaration</h4>
+                        <p class="text-light-50 fst-italic mb-5">
+                            "I hereby declare that the information provided in this portfolio is authentic and accurately represents my professional background and skills as a developer."
+                        </p>
+                        <div class="signature-area">
+                            <h3 class="signature-text text-accent">Md. Salauddin Yusuf</h3>
+                            <div class="h-line mx-auto"></div>
+                            <p class="mt-2 text-uppercase small tracking-widest">Candidate Signature</p>
+                        </div>
+                    </div>
+                    <div class="mt-5 social-links">
+                        <a href="https://github.com/MdSalauddinYusuf"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/md-salauddin-yusuf-2451381b2/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/salauddin.sagor.16"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <p class="mt-4 text-muted small">&copy; 2024 MD. SALAUDDIN YUSUF. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+]
+
+
+/////
+
+
+css
+
+[
+/* Color Palette & Variables */
+:root {
+    --primary-bg: #0f172a;
+    --dark-soft: #1e293b;
+    --accent: #00bfff;
+    --accent-gradient: linear-gradient(135deg, #00bfff 0%, #0072ff 100%);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Background Animated Blobs */
+.blob-c {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1; overflow: hidden;
+    filter: blur(80px);
+}
+.shape-blob {
+    height: 300px; width: 300px;
+    background: #00bfff;
+    position: absolute; opacity: 0.15;
+    border-radius: 50%;
+    animation: move 20s infinite alternate;
+}
+.shape-blob.one { top: -50px; right: -50px; background: #0072ff; width: 500px; height: 500px; }
+.shape-blob.two { bottom: -100px; left: 10%; background: #4f46e5; }
+
+@keyframes move {
+    from { transform: translate(0, 0) scale(1); }
+    to { transform: translate(100px, 100px) scale(1.2); }
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Typography */
+.gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    max-width: fit-content;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.hero-img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-profile-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border: 8px solid rgba(0, 191, 255, 0.2);
+    animation: profile_morph 8s ease-in-out infinite;
+}
+
+@keyframes profile_morph {
+    0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    background: var(--accent-gradient);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Buttons */
+.btn-accent-gradient {
+    background: var(--accent-gradient);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-accent-gradient:hover {
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.3);
+}
+
+.btn-cta {
+    background: rgba(0, 191, 255, 0.1);
+    color: var(--accent) !important;
+    border: 1px solid var(--accent);
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+/* Skills Badges */
+.skill-item {
+    background: var(--glass-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    background: var(--accent-gradient);
+    transform: translateY(-5px);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0; top: 0;
+    width: 16px; height: 16px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--accent);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px; top: 0;
+    width: 2px; height: 100%;
+    background: rgba(0, 191, 255, 0.2);
+}
+
+/* Signature & Footer */
+.signature-text {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem;
+}
+
+.h-line {
+    width: 200px;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-links a:hover { color: var(--accent); }
+
+
+
+]
+
+
+////
+
+
+js
+
+[
+
+// Dynamic Skills Data
+const skills = [
+    { name: "JavaScript", icon: "fab fa-js", color: "#f7df1e" },
+    { name: "PHP", icon: "fab fa-php", color: "#777bb4" },
+    { name: "Java", icon: "fab fa-java", color: "#007396" },
+    { name: "C / C++", icon: "fas fa-code", color: "#00599c" },
+    { name: "HTML/CSS", icon: "fab fa-html5", color: "#e34f26" },
+    { name: "Flutter", icon: "fas fa-mobile-alt", color: "#02569b" },
+    { name: "SQL", icon: "fas fa-database", color: "#00bc4d" }
+];
+
+// Dynamic Projects Data
+const projects = [
+    {
+        title: "CareSync Hospital System",
+        desc: "Automated hospital management system with PHP and real-time MySQL integration.",
+        tag: "Full Stack",
+        icon: "fa-hospital-alt",
+        link: "http://caresync.infinityfreeapp.com/login.php"
+    },
+    {
+        title: "ULAB Recovery Portal",
+        desc: "A lost-and-found recovery system built specifically for university campus usage.",
+        tag: "Web App",
+        icon: "fa-university",
+        link: "http://ulab-recovery-portal.infinityfreeapp.com/login.php"
+    },
+    {
+        title: "Eshop Web Project",
+        desc: "Modern e-commerce platform with dynamic product grids and cart functionality.",
+        tag: "PHP/CSS",
+        icon: "fa-shopping-cart",
+        link: "https://mdsalauddinyusuf.github.io/EshopWithHtmlCss"
+    }
+];
+
+// Render Functions
+function init() {
+    const skillContainer = document.getElementById('skills-container');
+    const projectContainer = document.getElementById('project-container');
+
+    // Render Skills
+    skills.forEach(skill => {
+        skillContainer.innerHTML += `
+            <div class="col-6 col-md-3 col-lg-2">
+                <div class="skill-item">
+                    <i class="${skill.icon} fa-2x mb-3" style="color: ${skill.color}"></i>
+                    <h6 class="mb-0">${skill.name}</h6>
+                </div>
+            </div>
+        `;
+    });
+
+    // Render Projects
+    projects.forEach(proj => {
+        projectContainer.innerHTML += `
+            <div class="col-md-4">
+                <div class="glass-card p-4 h-100">
+                    <div class="text-accent mb-3"><i class="fas ${proj.icon} fa-2x"></i></div>
+                    <span class="badge bg-secondary mb-2">${proj.tag}</span>
+                    <h4 class="text-white">${proj.title}</h4>
+                    <p class="text-light-50">${proj.desc}</p>
+                    <a href="#" class="btn btn-link text-accent p-0 mt-3 text-decoration-none fw-bold">
+                        VIEW PROJECT <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        `;
+    });
+}
+
+// Navbar Scroll Effect
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.glass-nav');
+    if (window.scrollY > 100) {
+        nav.style.padding = "10px 0";
+        nav.style.background = "rgba(15, 23, 42, 0.95)";
+    } else {
+        nav.style.padding = "15px 0";
+        nav.style.background = "rgba(15, 23, 42, 0.8)";
+    }
+});
+
+// Run
+document.addEventListener('DOMContentLoaded', init);
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+/* Color Palette & Variables */
+:root {
+    --primary-bg: #111728;
+    --dark-soft: #1e293b;
+    --accent: #00bfff;
+    --accent-gradient: linear-gradient(135deg, #00bfff 0%, #0072ff 100%);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Background Animated Blobs */
+.blob-c {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1; overflow: hidden;
+    filter: blur(80px);
+}
+.shape-blob {
+    height: 300px; width: 300px;
+    background: #00bfff;
+    position: absolute; opacity: 0.15;
+    border-radius: 50%;
+    animation: move 20s infinite alternate;
+}
+.shape-blob.one { top: -50px; right: -50px; background: #0072ff; width: 500px; height: 500px; }
+.shape-blob.two { bottom: -100px; left: 10%; background: #4f46e5; }
+
+@keyframes move {
+    from { transform: translate(0, 0) scale(1); }
+    to { transform: translate(100px, 100px) scale(1.2); }
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+    background: #142145;
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(183, 24, 24, 0.1);
+    padding: 15px 0;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Typography */
+.gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    max-width: fit-content;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.hero-img-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* keyframes section */
+@keyframes clean-breathe {
+    0% { transform: scale(1); filter: brightness(100%); }
+    50% { transform: scale(1.03); filter: brightness(110%); }
+    100% { transform: scale(1); filter: brightness(100%); }
+}
+
+/* .hero-profile-img section modify korun */
+.hero-profile-img {
+    width: 350px;
+    height: 350px;
+    
+    /* Cover use korle pasher sada ongsho gulo ar dekha jabe na */
+    object-fit: cover; 
+    
+    /* Mathar uporer ongsho jate kete na jay tai top-e align kora holo */
+    object-position: top; 
+    
+    /* Samanno zoom-in korar jonno scale use kora holo */
+    transform: scale(1.1); 
+    
+    border-radius: 50%;
+    border: 8px solid rgba(0, 191, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 191, 255, 0.2);
+    
+    /* Animation thakbe */
+    animation: clean-breathe 6s ease-in-out infinite;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    background: var(--accent-gradient);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* Buttons */
+.btn-accent-gradient {
+    background: var(--accent-gradient);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-accent-gradient:hover {
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.3);
+}
+
+.btn-cta {
+    background: rgba(0, 191, 255, 0.1);
+    color: var(--accent) !important;
+    border: 1px solid var(--accent);
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+/* Skills Badges */
+.skill-item {
+    background: var(--glass-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    background: var(--accent-gradient);
+    transform: translateY(-5px);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0; top: 0;
+    width: 16px; height: 16px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--accent);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px; top: 0;
+    width: 2px; height: 100%;
+    background: rgba(0, 191, 255, 0.2);
+}
+
+/* Signature & Footer */
+.signature-text {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem;
+}
+
+.h-line {
+    width: 200px;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-links a:hover { color: var(--accent); }
+
+/* Navbar link gulo white korar jonno */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    transition: 0.3s;
+}
+
+/* Hover korle jate halka color change hoy */
+.navbar-nav .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* Brand name (Md. Salauddin Yusuf) white korar jonno */
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+/* Footer copyright text white korar jonno */
+.footer .text-muted {
+    color: #ffffff !important;
+    opacity: 0.8; /* Pura white ektu chokhe lagle halka komate paren */
+}
